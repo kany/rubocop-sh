@@ -10,11 +10,11 @@ My first bash script.  Any tips or suggestions are welcomed and appreciated.
     # example usage:
     #   check a directory:     rubocop app/controllers
     #   check a file:          rubocop app/controllers/    application_controller.rb
-    #   check rspec directory: rubycop spec/controllers
-    #   check rspec file:      rubycop spec/controllers/application_controller_spec.rb
+    #   check rspec directory: rubocop spec/controllers
+    #   check rspec file:      rubocop spec/controllers/application_controller_spec.rb
     run_rubocop(){
       if gem list | gem list | grep 'rubocop\|rubocop-rspec' ; then
-        echo "rubycop and rubocop-rspec gems already installed"
+        echo "rubocop and rubocop-rspec gems already installed"
         echo "* Running rubocop"
         rubocop --require rubocop-rspec $@
       else
